@@ -1,0 +1,25 @@
+<h1>Wel-Come</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Task Name</th>
+        <th>User Name</th>
+        <th>Accept</th>
+        <th>Decline</th>
+        <th>Running</th>
+        <th>Completed</th>
+    </tr>
+
+    <% result.forEach(function(task){%>
+        <tr>
+            <td><%= task.task_id%></td>
+            <td><%= task.task_name%></td>
+            <td><%= task.task_user%></td>
+            <td><a href="updatestatus/1/<%= task.task_id%>">Accept</a></td>
+            <td><a href="updatestatus/2/<%= task.task_id%>">Decline</a></td>
+            <td><a href="updatestatus/3/<%= task.task_id%>">Running</a></td>
+            <td><a href="updatestatus/4/<%= task.task_id%>">Completed</a></td>
+        </tr>
+    <%})%>
+</table>
