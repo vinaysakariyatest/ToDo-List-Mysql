@@ -1,0 +1,2 @@
+create "todo_db" Database in phpmyadmin
+import the "todo_db.sql" in Database
